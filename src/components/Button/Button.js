@@ -1,10 +1,11 @@
 import React from 'react'
+import { Button } from "@material-ui/core"
 
 import  './Button.css'
 
-const Button = ({text, icon}) => {
+const CustomButton = ({text, icon}) => {
     return (
-        <Button className='custom-buttton' endIcon={icon ? (<div className='button-icon-container' >{icon}</div>) : null} >
+        <Button className='custom-button' endIcon={icon ? <div className='button-icon-container' >{icon}</div> : null} >
             <span className='button-text' >
                 {text}
             </span>
@@ -12,4 +13,4 @@ const Button = ({text, icon}) => {
     )
 }
 
-export default Button
+export default CustomButton;
