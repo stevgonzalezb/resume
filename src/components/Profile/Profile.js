@@ -1,16 +1,17 @@
 import React from 'react'
 import { Typography } from '@material-ui/core'
-import CustomTimeline, { CustomTimelineSeparator } from '../Timeline/Timeline'
-import PersonOutlineIcon from '@material-ui/icons/PersonOutline';
-
-import profilePhoto from '../../assets/images/0.jpg';
-import profileData from '../../utils/resumeData.js'
-
-import './Profile.css'
-import { PersonOutlineOutlined } from '@material-ui/icons';
 import TimelineItem from '@material-ui/lab/TimelineItem';
 import TimelineContent from '@material-ui/lab/TimelineContent';
+import PersonOutlineIcon from '@material-ui/icons/PersonOutline';
+import GetApp from '@material-ui/icons/GetApp';
+
+import profilePhoto from '../../assets/images/profile_photo.jpg';
+import profileData from '../../utils/resumeData.js'
 import resumeData from '../../utils/resumeData.js';
+import CustomTimeline, { CustomTimelineSeparator } from '../Timeline/Timeline'
+import CustomButton from '../Button/Button'
+
+import './Profile.css'
 
 const CustomTimelineItem = ({title, text, link}) => (
   <TimelineItem className='custom-item'>
@@ -55,7 +56,7 @@ function Profile() {
               ))}
             </CustomTimeline>
             <br/>
-            <button>my button</button>
+            <CustomButton text={'Download CV'} icon={<GetApp />} />
         </div>
     </div>
   );
