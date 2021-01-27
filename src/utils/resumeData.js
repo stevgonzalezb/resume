@@ -2,6 +2,7 @@ import React from 'react'
 import FacebookIcon from '@material-ui/icons/Facebook';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
+import profilePhoto from '../assets/images/img.jpg';
 
 export default {
     name: 'Steven González',
@@ -12,19 +13,14 @@ export default {
     address: 'Guácima, Alajuela, Costa Rica',
 
     socials: {
-        facebook: {
-            url: 'https://facebook.com/',
-            text: 'My FB',
-            icon: <FacebookIcon />
-        },
-        linkedIn: {
-            url: 'https://www.linkedin.com/',
-            text: 'My LI',
+        LinkedIn: {
+            url: 'https://www.linkedin.com/in/stevgonzalezb/',
+            text: 'stevgonzalezb',
             icon: <LinkedInIcon />
         },
-        github: {
-            url: 'https://github.com/',
-            text: 'My GH',
+        GitHub: {
+            url: 'https://github.com/stevgonzalezb',
+            text: 'stevgonzalezb',
             icon: <GitHubIcon />
         }
     },
@@ -32,35 +28,71 @@ export default {
     experiences: [
         {
             title:'Integration Developer',
-            date:'2018  - Present',
-            description: '• Develop APIs micro services.\n• Support internal applications.\n• Participate taking customer requirements.\n• Back end Development. \n• Use technologies such: SQL Server, .NET C#, Javascript, Java, Apache Camel, Visual Basic, GitLab, Node JS, PHP, Redis, Active MQ, NoSQL DB, SOAP, Rest API, web sockets.'
+            date:'Nov 2019 - Present',
+            description: `• Develop API Rest, SOAP Services with Node JS.
+            • Support internal applications.
+            • Participate taking customer requirements.
+            • Back end Development
+            • Use technologies such: SQL Server, .NET C#, Javascript, Java, Apache Camel, Visual Basic, GitLab, Node JS, PHP, Redis, Elastic Search, Active MQ, NoSQL DB, SOAP, Rest API, web sockets.`
         },
         {
-            title:'Integration Developer 2',
-            date:'2016  - Present',
-            description: '• Develop APIs micro services.\n• Support internal applications.\n• Participate taking customer requirements.\n• Back end Development. \n• Use technologies such: SQL Server, .NET C#, Javascript, Java, Apache Camel, Visual Basic, GitLab, Node JS, PHP, Redis, Active MQ, NoSQL DB, SOAP, Rest API, web sockets.'
+            title:'Software Engineer',
+            date:'Self Employed | Dec 2019  - Present',
+            description: `• Implemented Dialogflow to develop and maintenance chatbots and virtual assistant.
+            • Integrations with Google Calendar, Google Drive, CRM, cPanel, Web Sites.
+            • IT Business & Marketing Consulting.
+            • Some technologies used: Firebase, Google Cloud, Google APIs, Payloads for rich message, WhatsApp API, Webhook Responses, Facebook integration, Node JS, JSON, SSH.`
         },
         {
-            title:'Integration Developer 3',
-            date:'2015  - Present',
-            description: '• Develop APIs micro services.\n• Support internal applications.\n• Participate taking customer requirements.\n• Back end Development. \n• Use technologies such: SQL Server, .NET C#, Javascript, Java, Apache Camel, Visual Basic, GitLab, Node JS, PHP, Redis, Active MQ, NoSQL DB, SOAP, Rest API, web sockets.'
+            title:'Implementation Specialist MID',
+            date:'Jun 2018  - Oct 2019',
+            description: `• Participate taking customer requirements.
+            • Lead on the process to define business rules and data mapping.
+            • Develop complex reports with SQL Server, Reporting Services, SSIS, etc.
+            • AML/Compliance Consulting.
+            • Advanced T-SQL business logic development.`
+        },
+        {
+            title:'Software Support',
+            date:'May 2016  - May 2018',
+            description: `• Main support for different customers from CA and Caribbean.
+            • Implemented and train new customers until run the product into production.
+            • Lead on situations that work was so much, to achieve the company goal.
+            • Used technologies such: SQL Server, T-SQL, MS Access, MS Excel, ETL, Crystal Reports.`
         }
     ],
     educations: [
         {
-            title:'UTN',
-            date:'2018  - Present',
-            description: '• Develop APIs micro services.\n• Support internal applications.\n• Participate taking customer requirements.\n• Back end Development. \n• Use technologies such: SQL Server, .NET C#, Javascript, Java, Apache Camel, Visual Basic, GitLab, Node JS, PHP, Redis, Active MQ, NoSQL DB, SOAP, Rest API, web sockets.'
+            title:'Software Enginnering',
+            date:'Barchelor, Universidad Técnica Nacional | 2016  - 2021',
+            description: '• Beginners student tutoring'
         },
         {
-            title:'Integration Developer 2',
-            date:'2016  - Present',
-            description: '• Develop APIs micro services.\n• Support internal applications.\n• Participate taking customer requirements.\n• Back end Development. \n• Use technologies such: SQL Server, .NET C#, Javascript, Java, Apache Camel, Visual Basic, GitLab, Node JS, PHP, Redis, Active MQ, NoSQL DB, SOAP, Rest API, web sockets.'
+            title:'Technical High School & Networking IT ',
+            date:'CTP Jesús Ocaña Rojas | 2012  - 2014',
+            description: `• CCNA 1,2 & 3 modules finished.`
+        }
+    ],
+    certifications: [
+        {
+            title:'Lean Six Sigma Yellow Belt (ICYB)',
+            date:'VMEdu Inc. | March 2020  - March 2023',
+            description: ''
         },
         {
-            title:'Integration Developer 3',
-            date:'2015  - Present',
-            description: '• Develop APIs micro services.\n• Support internal applications.\n• Participate taking customer requirements.\n• Back end Development. \n• Use technologies such: SQL Server, .NET C#, Javascript, Java, Apache Camel, Visual Basic, GitLab, Node JS, PHP, Redis, Active MQ, NoSQL DB, SOAP, Rest API, web sockets.'
+            title:'Scrum Fundamentals Certified (SFC)',
+            date:'VMEdu Inc. | March 2020  - March 2023',
+            description: ``
+        },
+        {
+            title:'Advanced SQL for Data Scientists',
+            date:'LinkedIn Learning | Feb 2020',
+            description: ``
+        },
+        {
+            title:'Business English Level Test',
+            date:'Idioma Internacional | May 2020',
+            description: `B2+ English Level`
         }
     ],
     services: [
@@ -82,16 +114,85 @@ export default {
     ],
     skills: [
         {
-            title: 'Back end',
-            description: ['Node JS', 'Python', 'Java']
+            title: 'Back End',
+            description: ['Node JS', '.NET / C#', 'Python', 'Java', 'Cloud Functions on Google', 'Firebase']
         },
         {
-            title: 'Databases',
-            description: ['SQL Server', 'MySQL', 'Mongo DB']
+            title: 'Front & Design',
+            description: ['Wordpress', 'Elementor', 'React JS', 'HTML', 'CSS']
+        },
+        {
+            title: 'Data Structures',
+            description: ['SQL Server', 'MySQL', 'NoSQL DB', 'Redis', 'Active MQ', 'Rabbit MQ', 'Elastic Search']
         },
         {
             title: 'Source Control',
             description: ['Git', 'GitHub', 'GitLab', 'SourceSafe']
+        }
+    ],
+    portfolio: [
+        {
+            tag: 'React',
+            image: "https://direct.rhapsody.com/imageserver/images/alb.120624897/500x500.jpg",
+            title: 'Resume 1',
+            caption: 'Short descriptoin',
+            description: 'thi is my prpject description.',
+            links: [
+                {
+                    link: 'https://google.com',
+                    icon: <FacebookIcon />
+                },
+                {
+                    link: 'https://google.com',
+                    icon: <FacebookIcon />
+                },
+                {
+                    link: 'https://google.com',
+                    icon: <FacebookIcon />
+                }
+            ]
+        },
+        {
+            tag: 'React',
+            image: "https://direct.rhapsody.com/imageserver/images/alb.120624897/500x500.jpg",
+            title: 'Resume 2',
+            caption: 'Short descriptoin',
+            description: 'thi is my prpject description.',
+            links: [
+                {
+                    link: 'https://google.com',
+                    icon: <FacebookIcon />
+                },
+                {
+                    link: 'https://google.com',
+                    icon: <FacebookIcon />
+                },
+                {
+                    link: 'https://google.com',
+                    icon: <FacebookIcon />
+                }
+            ]
+        },
+        {
+            tag: 'Backend',
+            image: 'https://direct.rhapsody.com/imageserver/images/alb.120624897/500x500.jpg',
+            title: 'python 1',
+            caption: 'Short descriptoin',
+            description: 'thi is my prpject description.',
+            links: [
+                {
+                    link: 'https://google.com',
+                    icon: <FacebookIcon />
+                },
+                {
+                    link: 'https://google.com',
+                    icon: <FacebookIcon />
+                },
+                {
+                    link: 'https://google.com',
+                    icon: <FacebookIcon />
+                }
+            ]
         }
     ]
 }

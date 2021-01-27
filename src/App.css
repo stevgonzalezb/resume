@@ -1,5 +1,5 @@
 :root {
-    --main-color: #ffc500;
+    --main-color: #ebda41;
 }
 
 /*Margings and padding*/
@@ -14,6 +14,10 @@
 
 .mb-30 {
     margin-bottom: 30px !important;
+}
+
+.mb-20 {
+    margin-bottom: 20px !important;
 }
 
 .p-30 {

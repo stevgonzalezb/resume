@@ -2,6 +2,7 @@ import React from 'react';
 import { Grid, Typography, Icon, Paper, TextField } from '@material-ui/core';
 import WorkIcon from '@material-ui/icons/Work';
 import SchoolIcon from '@material-ui/icons/School';
+import CardMembershipIcon from '@material-ui/icons/CardMembership';
 import TimelineItem from '@material-ui/lab/TimelineItem';
 import TimelineContent from '@material-ui/lab/TimelineContent';
 import TimelineDot from '@material-ui/lab/TimelineDot';
@@ -65,12 +66,25 @@ const Resume = () => {
                                 </TimelineItem>
                             ))}
                         </CustomTimeline>
+
+                        <CustomTimeline title="Certifications and Scores" icon={<CardMembershipIcon />}>
+                            {resumeData.certifications.map(cerf => (
+                                <TimelineItem>
+                                    <CustomTimelineSeparator/>
+                                    <TimelineContent className='timeline-content' >
+                                        <Typography className='timeline-title'>{cerf.title}</Typography>
+                                        <Typography variant='caption' className='timeline-date'>{cerf.date}</Typography>
+                                        <Typography variant='body2' className='timeline-description'>{cerf.description}</Typography>
+                                    </TimelineContent>
+                                </TimelineItem>
+                            ))}
+                        </CustomTimeline>
                     </Grid>
                 </Grid>
             </Grid>
 
             {/* Services */}
-            <Grid container className='section pb-45 pt-45'>
+            {/*<Grid container className='section pb-45 pt-45'>
                 <Grid item className='section-title mb-30'>
                     <span></span>
                     <h6 className='section-title-text'>My Services</h6>
@@ -89,7 +103,7 @@ const Resume = () => {
                         ))}
                     </Grid>
                 </Grid>
-            </Grid>
+            </Grid>*/}
 
             {/* Skills */}
             <Grid container className='section gray-bg pb-45 p-50'>
