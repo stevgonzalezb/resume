@@ -3,9 +3,10 @@ import FacebookIcon from '@material-ui/icons/Facebook';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default {
     name: 'Steven González',
-    title: 'Software Developer',
+    title: 'Software Engineer',
 
     email: 'steven@drys.tech',
     phone: '+506 8634-7798',
@@ -26,43 +27,34 @@ export default {
     about: 'I am passionate about learning and understanding new business models in order to find the best way technology can help to improve the company processes and always giving my value added in every project or task that I am responsible of.',
     experiences: [
         {
-            title:'Integration Developer',
-            date:'Nov 2019 - Present',
+            title:'Integration Developer & Consultant',
+            date:'Smartsoft S.A | Jun 2018 - Present',
             description: `• Develop API Rest, SOAP Services with Node JS.
-            • Support internal applications.
+            • Support legacy internal applications.
+            • Back end Development.
             • Participate taking customer requirements.
-            • Back end Development
+            • Develop complex reports with SQL Server, Reporting Services, SSIS, etc.
             • Use technologies such: SQL Server, .NET C#, Javascript, Java, Apache Camel, Visual Basic, GitLab, Node JS, PHP, Redis, Elastic Search, Active MQ, NoSQL DB, SOAP, Rest API, web sockets.`
         },
         {
             title:'Software Engineer',
             date:'Self Employed | Dec 2019  - Present',
-            description: `• Implemented Dialogflow to develop and maintenance chatbots and virtual assistant.
-            • Integrations with Google Calendar, Google Drive, CRM, cPanel, Web Sites.
+            description: `• Integrations with Google Calendar, Google Drive, cPanel, Web Sites.
             • IT Business & Marketing Consulting.
-            • Some technologies used: Firebase, Google Cloud, Google APIs, Payloads for rich message, WhatsApp API, Webhook Responses, Facebook integration, Node JS, JSON, SSH.`
-        },
-        {
-            title:'Implementation Specialist MID',
-            date:'Jun 2018  - Oct 2019',
-            description: `• Participate taking customer requirements.
-            • Lead on the process to define business rules and data mapping.
-            • Develop complex reports with SQL Server, Reporting Services, SSIS, etc.
-            • AML/Compliance Consulting.
-            • Advanced T-SQL business logic development.`
+            • Web Scrapping using Python(Pandas, Numpy, BeautifulSoup).
+            • Some technologies used: Firebase, Google Cloud, Google APIs, Payloads, Webhooks, Node JS, JSON, SSH, Python.`
         },
         {
             title:'Software Support',
-            date:'May 2016  - May 2018',
+            date:'Palantir S.A | May 2016  - May 2018',
             description: `• Main support for different customers from CA and Caribbean.
-            • Implemented and train new customers until run the product into production.
             • Lead on situations that work was so much, to achieve the company goal.
             • Used technologies such: SQL Server, T-SQL, MS Access, MS Excel, ETL, Crystal Reports.`
         }
     ],
     educations: [
         {
-            title:'Software Enginnering',
+            title:'Software Engineering',
             date:'Barchelor, Universidad Técnica Nacional | 2016  - 2021',
             description: '• Beginners student tutoring'
         },
@@ -114,11 +106,11 @@ export default {
     skills: [
         {
             title: 'Back End',
-            description: ['Node JS', '.NET / C#', 'Python', 'Java', 'Cloud Functions on Google', 'Firebase']
+            description: ['Node JS', '.NET / C#', 'Python', 'Java', 'Cloud Functions', 'Firebase']
         },
         {
             title: 'Front & Design',
-            description: ['Wordpress', 'Elementor', 'React JS', 'HTML', 'CSS']
+            description: ['React JS', 'HTML', 'CSS', 'Wordpress', 'Elementor']
         },
         {
             title: 'Data Structures',
