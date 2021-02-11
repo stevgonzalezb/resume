@@ -12,6 +12,7 @@ import './Header.css'
 
 const Header = (props) => {
     const pathName = props?.location?.pathname
+    const mailtoText = `mailto:${resumeData.email}?subject=${resumeData.mailto.subject}&body=${resumeData.mailto.body}`
 
     return (
         <Navbar expand="lg" sticky='top' className='header'>
@@ -33,7 +34,7 @@ const Header = (props) => {
                     {Object.keys(resumeData.socials).map(key => (
                         <a key={key} href={resumeData.socials[key].url} target='_blank' rel="noreferrer">{resumeData.socials[key].icon}</a>
                     ))}
-                <CustomButton text='Hire Me' icon={<TelegramIcon />} link={`mailto:steven@drys.tech?subject=I%20want%20to%20hire%20you&body=I'm%20interested%20in%20learning%20to%20play%20the:%0A%0AThe%20days%20of%20the%20week%20that%20work%20best%20for%20me%20are:%0A%0AThe%20best%20times%20for%20lessons%20are:%20`} />
+                <CustomButton text='Hire Me' icon={<TelegramIcon />} link={mailtoText} />
                 </div>
 
             </Navbar.Collapse>

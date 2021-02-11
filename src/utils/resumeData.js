@@ -12,6 +12,10 @@ export default {
     phone: '+506 8634-7798',
     address: 'Guácima, Alajuela, Costa Rica',
 
+    mailto: {
+        subject: 'I want to hire you...',
+        body: 'Hello Steven, I am actually interested...'
+    },
     socials: {
         LinkedIn: {
             url: 'https://www.linkedin.com/in/stevgonzalezb/',
