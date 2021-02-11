@@ -5,6 +5,7 @@
 /* HEADER ITEM*/
 .timeline .timeline-header {
     padding-top: 7px;
+    font-weight: 500 !important;
 }
 
 .timeline .timeline-first-item {
@@ -34,12 +35,12 @@
 }
 
 .timeline .MuiTimelineConnector-root {
-    background-color: #eee !important;
+    background-color: #BDBDBD !important;
 }
 
 .timeline .timeline-dot-header > .MuiSvgIcon-root {
     font-size: 20px;
-    color: darkslategray;
+    color: whitesmoke;
 }
 
 .timeline .timeline-separator-padding {

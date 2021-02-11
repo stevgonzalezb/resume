@@ -1,5 +1,5 @@
-import React from 'react';
-import { Grid, Typography, Icon, Paper, TextField } from '@material-ui/core';
+import React, { useState } from 'react';
+import { Grid, Typography, Paper, TextField } from '@material-ui/core';
 import WorkIcon from '@material-ui/icons/Work';
 import SchoolIcon from '@material-ui/icons/School';
 import CardMembershipIcon from '@material-ui/icons/CardMembership';
@@ -14,6 +14,16 @@ import './Resume.css'
 
 
 const Resume = () => {
+
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [message, setMessage] = useState('');
+
+    function handleSubmit(event) {
+        event.preventDefault();
+        console.log('submit')
+    }
+
     return (
         <>  {/* About */}
             <Grid container className='section pb-45 pt-45'>
@@ -138,23 +148,24 @@ const Resume = () => {
                             <span></span>
                             <h6 className='section-title-text'>Contact Form</h6>
                         </Grid>
-
+                        <form onSubmit={handleSubmit} >
                         <Grid item xs={12}>
                             <Grid container spacing={3}>
                                 <Grid item xs={12} sm={6}>
-                                    <TextField fullWidth name='name' label='Name' />
+                                    <TextField fullWidth name='name' label='Name' value={name} onInput={ e=>setName(e.target.value)} />
                                 </Grid>
                                 <Grid item xs={12} sm={6}>
-                                    <TextField fullWidth name='email' label='E-mail' />
+                                    <TextField fullWidth name='email' label='E-mail' value={email} onInput={ e=>setEmail(e.target.value)} />
                                 </Grid>
                                 <Grid item xs={12}>
-                                    <TextField fullWidth name='message' label='Message' multiline rows={4} />
+                                    <TextField fullWidth name='message' label='Message' multiline rows={4} value={message} onInput={ e=>setMessage(e.target.value)} />
                                 </Grid>
                                 <Grid item xs={12}>
-                                   <CustomButton text='Submit' />
+                                   <CustomButton text='Submit' type='submit'/>
                                 </Grid>
                             </Grid>
                         </Grid>
+                        </form>
                     </Grid>
                 </Grid>
 

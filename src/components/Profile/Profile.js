@@ -19,7 +19,7 @@ const CustomTimelineItem = ({title, text, link}) => (
       { link ? (
         <Typography className='timeline-item-text'>
           <span>{title}:</span>{" "}
-          <a href={link} target='_blank' >
+          <a href={link} target='_blank' rel="noreferrer" >
             {text}
           </a>
         </Typography>
@@ -55,7 +55,7 @@ function Profile() {
               ))}
             </CustomTimeline>
             <div className='button-container' >
-              <CustomButton text={'Download CV'} icon={<GetApp />} />
+              <CustomButton text={'Download CV'} icon={<GetApp />} link={'https://drive.google.com/file/d/1P96vm9g6TD_m5KUIUgO_kVBwx15ED1M8/view?usp=sharing'} />
             </div>
         </div>
     </div>

@@ -28,6 +28,7 @@
 }
 
 .button-text {
+    color: whitesmoke !important;
     font-size: 14px !important;
     text-transform: none !important;
     text-align: center !important;

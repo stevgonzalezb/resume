@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {Container, Grid} from "@material-ui/core";
 
 import Profile from './components/Profile/Profile'
@@ -13,10 +13,13 @@ import './App.css';
 
 
 function App() {
+
+  const [darkMode, setDarkMode] = useState(false)
+
   return (
     <Container className={'top-60'}>
-      <Grid container spacing={7} >
-        <Grid item xs={12} sm={12} md={4} lg={3}>
+      <Grid container spacing={6} >
+        <Grid item xs={12} sm={6} md={4} lg={3}>
           <Profile/>
         </Grid>
         <Grid item xs>

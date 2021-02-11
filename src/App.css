@@ -1,5 +1,6 @@
 :root {
-    --main-color: #ebda41;
+    --main-color: #5D6D7E;
+    --sec-color: whitesmoke;
 }
 
 /*Margings and padding*/
@@ -55,7 +56,7 @@
 }
 
 .main-content {
-    background-color: white;
+    background-color: var(--sec-color);
     min-height: 100vh;
     border-radius: 6px;
     -moz-border-radius: 6px;
