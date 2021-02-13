@@ -55,7 +55,7 @@ function Profile() {
               ))}
             </CustomTimeline>
             <div className='button-container' >
-              <CustomButton text={'Download CV'} icon={<GetApp />} link={'https://drive.google.com/file/d/1P96vm9g6TD_m5KUIUgO_kVBwx15ED1M8/view?usp=sharing'} />
+              <CustomButton text={'Download CV'} icon={<GetApp />} link={resumeData.resume} />
             </div>
         </div>
     </div>

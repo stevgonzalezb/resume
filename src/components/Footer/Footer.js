@@ -14,9 +14,9 @@ const Footer = () => {
             </div>
             <div className='footer-right' >
                 <Typography className='footer-copyright'>
-                    Designed and Developed by <a href='/' target='_blank' >Steven González.</a>
+                    Designed and Developed by <a href='https://stevgonzalezb.github.io/resume/' rel="noreferrer" target='_blank' >Steven González.</a>
                     <br/>
-                    Clone idea from <a href='/' target='_blank' >Tavonline</a>.
+                    Clone idea from <a href='http://www.tavonline.net/' rel="noreferrer" target='_blank' >Tavonline</a>.
                 </Typography>
             </div>
         </div>
