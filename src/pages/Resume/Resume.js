@@ -8,10 +8,6 @@ import TimelineContent from '@material-ui/lab/TimelineContent';
 import TimelineDot from '@material-ui/lab/TimelineDot';
 import CustomTimeline, { CustomTimelineSeparator } from '../../components/Timeline/Timeline'
 import CustomButton from '../../components/Button/Button'
-import emailjs from 'emailjs-com';
-import ReactNotification from 'react-notifications-component'
-import { store } from 'react-notifications-component';
-import 'react-notifications-component/dist/theme.css'
 
 import resumeData from '../../utils/resumeData'
 import './Resume.css'
@@ -23,45 +19,10 @@ const Resume = () => {
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
 
-    function sendEmail(e) {
-        e.preventDefault();
-    
-        emailjs.sendForm(resumeData.emailJS.serviceId, resumeData.emailJS.templateId, e.target, resumeData.emailJS.userId)
-          .then((result) => {
-              console.log(result.text);
-              store.addNotification({
-                title: "Sent",
-                message: "Message sent succesfully!",
-                type: "success",
-                container: "bottom-center",
-                animationIn: ["animated", "fadeIn"],
-                animationOut: ["animated", "fadeOut"],
-                dismiss: {
-                  duration: 4000,
-                  onScreen: false
-                }
-              });
-              setName('');
-              setEmail('');
-              setMessage('');
-              
-          }, (error) => {
-            console.log(error.text);
-            store.addNotification({
-                title: "ERROR",
-                message: "Please try again later.",
-                type: "danger",
-                container: "bottom-center",
-                animationIn: ["animated", "fadeIn"],
-                animationOut: ["animated", "fadeOut"],
-                dismiss: {
-                  duration: 4000,
-                  onScreen: false,
-                  showIcon: true
-                }
-              });
-          });
-      }
+    function handleSubmit(event) {
+        event.preventDefault();
+        console.log('submit')
+    }
 
     return (
         <>  {/* About */}
@@ -187,7 +148,7 @@ const Resume = () => {
                             <span></span>
                             <h6 className='section-title-text'>Contact Form</h6>
                         </Grid>
-                        <form onSubmit={sendEmail} >
+                        <form onSubmit={handleSubmit} >
                         <Grid item xs={12}>
                             <Grid container spacing={3}>
                                 <Grid item xs={12} sm={6}>

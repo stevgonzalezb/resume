@@ -17,13 +17,6 @@ export default {
         subject: '',
         body: ''
     },
-
-    emailJS: {
-        serviceId: '',
-        templateId: '',
-        userId: ''
-    },
-
     socials: {
         LinkedIn: {
             url: '',
