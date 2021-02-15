@@ -8,9 +8,12 @@ import TimelineContent from '@material-ui/lab/TimelineContent';
 import TimelineDot from '@material-ui/lab/TimelineDot';
 import CustomTimeline, { CustomTimelineSeparator } from '../../components/Timeline/Timeline'
 import CustomButton from '../../components/Button/Button'
+import emailjs from 'emailjs-com';
+import { store } from 'react-notifications-component';
 
 import resumeData from '../../utils/resumeData'
 import './Resume.css'
+import 'react-notifications-component/dist/theme.css'
 
 
 const Resume = () => {
@@ -19,9 +22,47 @@ const Resume = () => {
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
 
-    function handleSubmit(event) {
-        event.preventDefault();
-        console.log('submit')
+    function handleSubmit(e) {
+        e.preventDefault();
+        
+        emailjs.sendForm(resumeData.emailJS.serviceId, resumeData.emailJS.templateId, e.target, resumeData.emailJS.userId)
+        .then((result) => {
+            console.log(result.text);
+            store.addNotification({
+                title: "Message sent!",
+                message: "I will contact you ASAP.",
+                type: "success",
+                insert: "top",
+                container: "bottom-center",
+                animationIn: ["animated", "fadeIn"],
+                animationOut: ["animated", "fadeOut"],
+                dismiss: {
+                  duration: 4000,
+                  onScreen: false,
+                  showIcon: true
+                }
+              })
+              setName('');
+              setEmail('');
+              setMessage('');
+
+        }, (error) => {
+            console.log(error.text);
+            store.addNotification({
+                title: "Error",
+                message: "Please, try again later.",
+                type: "danger",
+                insert: "top",
+                container: "bottom-center",
+                animationIn: ["animated", "fadeIn"],
+                animationOut: ["animated", "fadeOut"],
+                dismiss: {
+                  duration: 4000,
+                  onScreen: false,
+                  showIcon: true
+                }
+              })
+        });
     }
 
     return (
