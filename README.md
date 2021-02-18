@@ -7,7 +7,6 @@ The idea of this project was taken from this template: [Mat - vCard & Resume Tem
 
 1.  [Requirements](https://github.com/stevgonzalezb/resume#requirements)
 2.  [Installation](https://github.com/stevgonzalezb/resume#installation)
-3.  [Documentation](https://github.com/stevgonzalezb/resume#resume-data-properties)
 
 ## Requirements
 
