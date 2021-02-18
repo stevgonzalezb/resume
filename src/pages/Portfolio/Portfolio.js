@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Grid, Typography, Tabs, Tab, Card, CardContent, CardActionArea, CardMedia, Grow, DialogContent, Dialog, DialogTitle, DialogActions } from '@material-ui/core';
+import Tooltip from '@material-ui/core/Tooltip';
 
 import resumeData from '../../utils/resumeData';
 import './Portfolio.css'
@@ -62,6 +63,9 @@ const Portfolio = () => {
                                         <CardContent>
                                             <Typography variant="body2" className='custom-card-title'>{project.title}</Typography>
                                             <Typography variant='body2' className='custom-card-description' >{project.caption}</Typography>
+                                            <Tooltip title={project.technology.name}>
+                                            <img src={project.technology.icon} alt='' style={{ position: "absolute", bottom: 5, right: 5, width: 32, height:32 }} />
+                                            </Tooltip>
                                         </CardContent>
                                     </CardActionArea>
                                 </Card>

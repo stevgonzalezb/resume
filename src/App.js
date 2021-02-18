@@ -28,9 +28,9 @@ function App() {
               <Header/>
               <div className='main-content containter-shadow' >
               <Switch>
-                {/* <Route path='/portfolio'>
+                <Route path='/portfolio'>
                   <Portfolio/>
-                </Route> */}
+                </Route>
                 <Route path='/'>
                   <Resume/>
                 </Route>

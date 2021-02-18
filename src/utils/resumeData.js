@@ -8,6 +8,7 @@ export default {
     name: '',
     title: '',
     resume: '',
+    about: '',
 
     email: '',
     phone: '',
@@ -36,7 +37,6 @@ export default {
             icon: <GitHubIcon />
         }
     },
-    about: '',
     experiences: [
         {
             title:'',
@@ -130,6 +130,10 @@ export default {
             title: '',
             caption: '',
             description: '',
+            technology: {
+                name: '',
+                icon: ''
+            },
             links: [
                 {
                     link: '',
@@ -151,6 +155,10 @@ export default {
             title: '',
             caption: '',
             description: '',
+            technology: {
+                name: '',
+                icon: ''
+            },
             links: [
                 {
                     link: '',
@@ -172,6 +180,10 @@ export default {
             title: '',
             caption: '',
             description: '',
+            technology: {
+                name: '',
+                icon: ''
+            },
             links: [
                 {
                     link: '',

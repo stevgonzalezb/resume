@@ -37,6 +37,7 @@
     font-weight: 400 !important;
 }
 
+
 /* Dialog */
 
 .project-dialog {
@@ -75,3 +76,4 @@
 .project-dialog .project-dialog-icon > .MuiSvgIcon-root {
     font-size: 30px !important;
 }
+
